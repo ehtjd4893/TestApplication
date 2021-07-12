@@ -36,4 +36,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		 WHERE BIDX = #{bIdx}
 	</delete>
 	
+	<select id="selectBoardCount" resultType="int">
+		SELECT COUNT(BIDX)
+		  FROM BOARD
+	</select>
+	
 </mapper>
