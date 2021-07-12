@@ -28,10 +28,10 @@
 			<c:if test="${not empty list}">
 				<c:forEach var="boardDTO" items="${list}">
 					<tr>
-						<td>${boardDTO.bIdx}</td>
-						<td>${boardDTO.bWriter}</td>
-						<td><a href="selectBoardByIdx.do?bIdx=${boardDTO.bIdx}">${boardDTO.bTitle}</a></td>
-						<td>${boardDTO.bDate}</td>
+						<td>${boardDTO.BIdx}</td>
+						<td>${boardDTO.BWriter}</td>
+						<td><a href="selectBoardByIdx.do?bIdx=${boardDTO.BIdx}">${boardDTO.BTitle}</a></td>
+						<td>${boardDTO.BDate}</td>
 					</tr>
 				</c:forEach>
 			</c:if>
